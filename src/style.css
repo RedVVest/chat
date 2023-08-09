@@ -1,0 +1,66 @@
+.ws-form-container {
+  background-color: aqua;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ws-form-container .ws-form-wrapper {
+  background-color: white;
+  padding: 20px 60px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.ws-form-container .ws-form-wrapper .ws-logo {
+  color: red;
+  font-weight: bold;
+  font-size: 24px;
+}
+.ws-form-container .ws-form-wrapper .ws-title {
+  color: red;
+  font-size: 12px;
+}
+.ws-form-container .ws-form-wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.ws-form-container .ws-form-wrapper form input {
+  padding: 15px;
+  border: none;
+  width: 250px;
+  border-bottom: 1px solid aqua;
+}
+.ws-form-container .ws-form-wrapper form input::-moz-placeholder {
+  color: rgb(175, 175, 175);
+}
+.ws-form-container .ws-form-wrapper form input::placeholder {
+  color: rgb(175, 175, 175);
+}
+.ws-form-container .ws-form-wrapper form button {
+  background-color: aqua;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+.ws-form-container .ws-form-wrapper form label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: red;
+  font-size: 12px;
+  cursor: pointer;
+}
+.ws-form-container .ws-form-wrapper form label img {
+  width: 32px;
+}
+.ws-form-container .ws-form-wrapper p {
+  color: red;
+  font-size: 12px;
+  margin-top: 10px;
+}/*# sourceMappingURL=style.css.map */
