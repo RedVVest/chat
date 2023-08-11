@@ -73,9 +73,22 @@ const Input = () => {
     setText("");
     setImg(null);
   };
+
+
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter" && !event.shiftKey) {
+      event.preventDefault(); // Prevents new line in the input field
+      handleSend(); // Call your send message function
+    }
+  };
+
     return (
         <div className='ws-input'>
-            <input type="text" name="" id="" placeholder='Type something' onChange={(e) => setText(e.target.value)} value={text}/>
+            <input type="text" name="" id="" placeholder='Type something'
+             onChange={(e) => setText(e.target.value)}
+             value={text}
+            onKeyPress={handleKeyPress}
+            />
             <div className="ws-send">
                 {/* <img src={attach} alt="" /> */}
                 <input type="file" style={{display:"none"}} id="file" onChange={(e) => setImg(e.target.files[0])}/>
